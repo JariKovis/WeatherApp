@@ -3,14 +3,14 @@ const app = express()
 const bodyParser = require('body-parser');
 const request = require('request');
 const apiKey = "f23430b78457c598033a85cb3741012d";
-
+const PORT = process.env.PORT || 5000;
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
     // NEW CODE
-    res.render('index');
+    res.render('index', { weather: null, error: null });
 })
 
 app.post('/', function (req, res) {
@@ -34,6 +34,6 @@ app.post('/', function (req, res) {
 })
 
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(PORT, function () {
     console.log('Example app listening on port 3000!')
 })
