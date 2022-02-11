@@ -55,7 +55,7 @@ p {
 .ghost-input:focus {
   border-bottom: 1px solid #ddd;
 }
-.ghost-button {
+/*.ghost-button {
   background-color: transparent;
   border: 2px solid #ddd;
   padding: 10px 30px;
@@ -66,10 +66,23 @@ p {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}*/
+
+.ghost-button {
+  border: none;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
+
 .ghost-button:hover {
   border: 2px solid #515151;
 }
 p {
-  color: #e64a19;
+  color: #053d0e;
 }
