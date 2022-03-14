@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/878551c7-317d-453b-a6bc-3aaabe75163f/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/kovisweather",
+  "appService.deploySubpath": "."
+}
