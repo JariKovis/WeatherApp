@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const apiKey = process.env.apiKey;
 const PORT = process.env.PORT || 5000;
-//const gi = require('gitignore');
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
@@ -38,5 +37,5 @@ app.post('/', function (req, res) {
 
 
 app.listen(PORT, function () {
-    console.log('Example app listening on port 5000!')
+    console.log(`Example app listening on portti ${PORT}`)
 })
