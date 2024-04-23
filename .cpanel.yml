@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/jarikova/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R weatherapp $DEPLOYPATH
